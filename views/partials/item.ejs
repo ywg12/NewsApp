@@ -1,0 +1,20 @@
+<div class="row">
+  <% for(let i=0; i<dbData.length; i++){ %>
+    <div class="pricing-column col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+          <img src="<%= dbData[i].urlImg %>" class="img-fluid center"/>
+          <a href="<%= dbData[i].url %>">
+            <div class="mask"></div>
+          </a>
+        </div>
+        <div class="card-header"><%= dbData[i].s_name %></div>
+        <div class="card-body">
+          <h5 class="card-title"><%= dbData[i].title %></h5>
+          <p class="card-text"><%= dbData[i].dscr %>You can read more at <a href="<%= dbData[i].url %>">here.</a></p> 
+        </div>
+        <div class="card-footer"><%= dbData[i].publishedAt %></div>
+      </div>
+    </div>
+  <% } %>
+</div>

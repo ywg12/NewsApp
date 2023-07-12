@@ -1,0 +1,18 @@
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}

@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<%- include('partials/navbar') %>
+<h1>Welcome</h1>
+<%- include('partials/item') %>
+<% dbData = dbDataBus %>
+<a href="/news/business" class="section-link"><h2 class="section-heading"> Business News</h2></a>
+<%- include('partials/itemc') %>
+<% dbData = dbDataEnt %>
+<a href="/news/entertainment" class="section-link"><h2 class="section-heading"> Entertainment News</h2></a>
+<%- include('partials/itemc') %>
+
+
+<%- include('partials/footer') %>
+
+
+<style>
+    .section-heading {
+      background-color: #70747c;
+      padding: 10px;
+      border-radius: 5px;
+      color: black;
+      text-decoration: none;
+    }
+    .section-link {
+        text-decoration: none;
+      }
+    
+      .section-link:hover {
+        text-decoration: none;
+      }
+  </style>

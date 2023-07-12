@@ -1,0 +1,77 @@
+<%- include('partials/header') %>
+<style>
+    /* Add custom styles for the navbar */
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+    
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+    
+        .navbar-nav .nav-item {
+            margin-right: 10px;
+        }
+    
+        .navbar-nav .nav-link {
+            color: #333;
+        }
+    
+        .dropdown-menu {
+            background-color: #f8f9fa;
+            border: none;
+        }
+    
+        .dropdown-item {
+            color: #333;
+        }
+    
+        .form-control {
+            border-radius: 20px;
+            width: 300px;
+            margin-right: 10px;
+        }
+    
+        .btn {
+            border-radius: 20px;
+            background-color: #E8ECEF;;
+            color: #333;
+            padding: 5px 15px;
+            border: none;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/news">News App</a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/adconfig">Configurations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/compose">Compose</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="btn" href="/logout" role="button">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+
+<h1>Welcome to admin panel</h1>
+<h1>Welcome to admin panel</h1>
+    
+
+<%- include('partials/footer') %>

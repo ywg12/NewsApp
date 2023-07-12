@@ -1,0 +1,103 @@
+<%- include('partials/header') %>
+<style>
+/* Add custom styles for the navbar */
+    .navbar {
+        background-color: #f8f9fa;
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #333;
+    }
+
+    .dropdown-menu {
+        background-color: #f8f9fa;
+        border: none;
+    }
+
+    .dropdown-item {
+        color: #333;
+    }
+
+    .form-control {
+        border-radius: 20px;
+        width: 1000px;
+        margin-right: 10px;
+    }
+
+    .btn {
+        border-radius: 20px;
+        background-color: #E8ECEF;;
+        color: #333;
+        padding: 5px 15px;
+        border: none;
+    }
+</style>
+<nav class="navbar navbar-expand-lg bg-secondary navbar-light fixed-top">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/news">News App</a>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/adconfig">Configurations</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/compose">Compose</a>
+        </li>
+        </ul>
+
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="btn" href="/logout" role="button">Log Out</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+    
+<div class="jumbotron centered">
+    <div class="container">
+        <form action="/admin/compose" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="title">Enter Title:</label>
+                <input type="text" name="title" id="title" class="form-control" placeholder="Enter Title">
+            </div>
+            <div class="form-group">
+                <label for="dscr">Enter Description:</label>
+                <input type="text" name="dscr" id="dscr" class="form-control" placeholder="Enter Description">
+            </div>
+            <div class="form-group">
+                <label for="url">Enter URL of Original Post:</label>
+                <input type="text" name="url" id="url" class="form-control" placeholder="Enter URL of Original Post">
+            </div>
+            <div class="form-group">
+                <label for="urlImg">Upload Image:</label>
+                <input type="file" name="urlImg" id="urlImg" class="form-control" placeholder="Enter Image URL">
+            </div>
+            <div class="form-group">
+                <label for="publishedAt">Enter Date of Publish:</label>
+                <input type="text" name="publishedAt" id="publishedAt" class="form-control" placeholder="Enter Date of Publish">
+            </div>
+            <button type="submit" class="btn btn-primary">Insert</button>
+        </form>
+    </div>
+</div>
+
+
+
+    
+
+<%- include('partials/footer') %>

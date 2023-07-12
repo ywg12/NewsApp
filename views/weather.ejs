@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<%- include('partials/navbar') %>
+<div class="jumbotron centered">
+    <div class="container">
+        <img src ="<%= imgURL %>">
+        <h1>The temperature in <%= cityName %> is <%= temp %> degree celcius.</h1>
+        <h4>The weather is currently <%= dscr %>.</h4>
+        <h4>The temperature feels like <%= ftemp %> degree celcius because of various atmospheric conditions.</h4>
+        <h4>The humidity is currently <%= humd %> g/kg.</h4>
+        <h4>The pressure is currently <%= pres %> Pascal.</h4>
+        <h4>The wind speed is currently <%= wspeed %> km/h.</h4>
+        <h4>The visibility is currently <%= vis %> meters.</h4>
+
+    </div>
+</div>>
+
+<%- include('partials/footer') %>
